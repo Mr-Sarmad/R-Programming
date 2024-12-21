@@ -1,0 +1,17 @@
+# install pacakges
+install.packages("GWalkR")
+install.packages("esquisse")
+install.packages("explore")
+
+#load pacakages
+library("tidyverse")
+library("GWalkR")
+library("esquisse")
+library("explore")
+library("readxl")
+#load data
+df_ghgs<-read_excel("Plotting/Data/GHgs.xlsx")
+
+# Explore data
+gwalkr(df_ghgs)
+esquisser(df_ghgs)
